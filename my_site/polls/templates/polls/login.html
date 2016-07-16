@@ -1,0 +1,14 @@
+<h1>Login to MyPolls App</h1>
+<form id="login_form" method="post" action="{% url 'polls:login' %}">
+{% csrf_token %}
+	Username : <input type="text" name="username" value="" size="50" />
+	<br />
+	Password : <input type="password" name="password" value="" size="50"/>
+	<br />
+
+	<input type="submit" value="submit" />
+
+</form>
+<br />
+<a href="/polls/register/">Do not have an account? Register Here.</a>
+
